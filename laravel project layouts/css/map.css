@@ -1,0 +1,133 @@
+body, html {
+    font-size: 1vw;
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+	position: fixed !important;
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+}
+
+.menuBar {
+	display: none;
+}
+
+.logIn {
+	position: fixed;
+	display: none;
+	left: 8%;
+	z-index: 100;
+	height: 100%;
+	width: 25%;
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.container:first-of-type {
+	width: 100%;
+	height: 40%;
+}
+
+.container:second-of-type {
+	width: 100%;
+	height: 60%;
+}
+
+.container label {
+	width: 80%;
+    padding: 12px 20px;
+    margin: 5% 10%;
+}
+
+.container input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 5% 10%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.container button {
+    background-color: rgba(0, 128, 128, 0.9);
+    color: white;
+    padding: 14px 20px;
+    margin: 3% 5%;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+.nav {
+	position: relative;
+	/*left: 0;*/
+	z-index: 200;
+	height: 100%;
+	width: 8%;
+	color: rgba(0, 128, 128, 0.9);
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.menuButton {
+	padding-top: 20%;
+	position: relative;
+}
+
+.gm-style-mtc {
+  display: none;
+}
+
+.contextMenu {
+	display: none;
+	margin-left: 35%;
+	font-size: 1.15rem;
+}
+
+.submit {
+	background-color: rgba(0, 128, 128, 0);
+	border: none;
+	font-size: 1.5rem;
+	color: rgba(0, 128, 128, 0.9);
+	margin-left: 55%;
+}
+
+.menuButton label input{
+	vertical-align: middle;
+	position: absolute;
+	top: 45%;
+	left: 0%;
+}
+
+#search input[type=text] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0);
+	position: absolute;
+	top: 37%;
+    width: 100%;
+    height: 40%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#search input[type=text]:focus {
+    width: 500%;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#search {
+	display: none;
+}
+
+.nav{
+	float: left;
+}
