@@ -10,7 +10,7 @@ $(document).ready(function() {
         startingPoint = new google.maps.Marker({
         	position: {lat: 42.144609, lng: 24.733226},
         	map: map,
-        	title: "Hello Koce"
+        	title: "Test 1,2,3"
         });
 
     function myPos () {
@@ -54,18 +54,18 @@ $(document).ready(function() {
     	$(".contextMenu").toggle("fast");
     });
 
-    $("#signInBtn").click(function(event) {
+    $("#signInBtn").click(function(){
+      $("#signInForm").toggle(400);
+      $("#signUpForm").hide();
+    });
+
+    $("#signUpBtn").click(function(){
+      $("#signUpForm").toggle(400);
+      $("#signInForm").hide();
+    });
+
+    $("#regBtn").click(function(event) {
       $(".logIn").toggle("fast");
-      // $(".nav").toggle(function() {
-      //   $(".nav").css({
-      //     left: '0'
-      //   });
-      // }, function() {
-      //   $(".nav").css({
-      //     left: '25'
-      //   });
-      // });
-      
     });
 
     $("#myPos").click(function(event) {
@@ -88,5 +88,5 @@ $(document).ready(function() {
     		$("#search").fadeOut("fast");
     	}
     });
-
+    
 })
