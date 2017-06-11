@@ -12,6 +12,10 @@ class EventsController extends Controller
         $data = "123";
         $data = Event::all();
         //$data = DB::table('events')->get();
-        return view('home', compact('data'));
+        return response()->json($data);
+    }
+
+    public function map(){
+        return view('home');
     }
 }

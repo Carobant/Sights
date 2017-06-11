@@ -25,3 +25,5 @@ Route::get('/', function () {
 });*/
 
 Route::get('/test', 'EventsController@index');
+
+Route::get('/map', 'EventsController@map');
