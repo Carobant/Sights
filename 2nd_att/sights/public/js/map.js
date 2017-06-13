@@ -1,4 +1,4 @@
-var map;
+var map, pins;
 
 function getPins(){
   $.get( "/test", function( data ) {
@@ -6,12 +6,19 @@ function getPins(){
 
   for(i = 0; i < data.length; i++){
     console.log(data[i]);
+    // startingPoint = new google.maps.Marker({
+          
+    //     	position: {lat: 43.144609, lng: 24.733226},
+    //     	map: map,
+    //     	title: data[i].title
+    // });
     startingPoint = new google.maps.Marker({
           
-        	position: {lat: 42.144609, lng: 24.733226},
+        	position: {lat: data[i].lat, lng: data[i].long},
         	map: map,
         	title: data[i].title
     });
+    
   }
   }, "json" );
 }
