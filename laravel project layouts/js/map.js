@@ -46,6 +46,8 @@ $(document).ready(function() {
       }
   	};
 
+    myPos();
+
     $("#openMenu").click(function(){
     	$(".menuBar").toggle("fast");
     });

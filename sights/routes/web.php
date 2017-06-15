@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+/*Route::get('/test', function () {
+
+    $data = "123";
+    $data = App\Event::all();
+    //$data = DB::table('events')->get();
+    return view('home', compact('data'));
+});*/
+
+Route::get('/test', 'EventsController@index');
