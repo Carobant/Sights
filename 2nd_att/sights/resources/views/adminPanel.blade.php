@@ -14,9 +14,9 @@
 <body>
 
 <div class="innerContent">
-	<a href="/create"><div class="button">Create</div></a>
-	<a href="#"><div class="button">Update</div></a>
-	<a href="#"><div class="button">Delete</div></a>
+	<a href="/admin/create"><div class="button">Create</div></a>
+	<a href="/admin/update"><div class="button">Update</div></a>
+	<a href="/admin/delete"><div class="button">Delete</div></a>
 </div>
 
 </body>

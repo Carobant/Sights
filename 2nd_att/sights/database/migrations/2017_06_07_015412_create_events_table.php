@@ -21,6 +21,7 @@ class CreateEventsTable extends Migration
             $table->double('lat');
             $table->double('long');
             $table->integer('type');
+            $table->date('date');
         });
     }
 

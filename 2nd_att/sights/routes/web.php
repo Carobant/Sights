@@ -28,4 +28,16 @@ Route::get('/test', 'EventsController@index');
 
 Route::get('/map', 'EventsController@map');
 
-Route::get('/admin', 'AdminController@store');
+Route::get('/admin', 'AdminController@index');
+
+Route::get('/admin/create', 'AdminController@createView');
+
+Route::post('/admin/create', 'AdminController@create');
+
+Route::get('/admin/update', 'AdminController@updateView');
+
+Route::post('/admin/update', 'AdminController@update');
+
+Route::get('/admin/delete', 'AdminController@deleteView');
+
+Route::post('/admin/delete', 'AdminController@delete');
