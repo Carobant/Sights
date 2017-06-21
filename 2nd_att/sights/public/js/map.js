@@ -1,4 +1,4 @@
-var map, pins = [];
+var map, pins = [], sight = [];
 
 function getPins(){
   $.get( "/test", function( data ) {
@@ -12,20 +12,44 @@ function getPins(){
     //     	map: map,
     //     	title: data[i].title
     // });
+    sight[i] = data[i];
     pins[i] = new google.maps.Marker({
           
         	position: {lat: data[i].lat, lng: data[i].long},
         	map: map,
         	title: data[i].title
     });
+    console.log(pins[i]);
     
   }
   }, "json" );
 }
 
-function hidePins(){
+function hideEvents(){
   for(i = 0; i < pins.length; i++){
-    pins[i].setMap(null);
+    if(pins[i].map == map){
+      if(sight[i].type == 2){
+        pins[i].setMap(null);
+      };
+    }else{
+      if(sight[i].type == 2){
+        pins[i].setMap(map);
+      };
+    }
+  }
+}
+
+function hideLocations(){
+  for(i = 0; i < pins.length; i++){
+    if(pins[i].map == map){
+      if(sight[i].type == 1){
+        pins[i].setMap(null);
+      };
+    }else{
+      if(sight[i].type == 1){
+        pins[i].setMap(map);
+      };
+    }
   }
 }
 
@@ -84,6 +108,14 @@ function showMap() {
         infoWindow.open(map);
       }
   	};
+
+    $("#event").click(function(){
+      hideEvents();
+    });
+
+    $("#location").click(function(){
+      hideLocations();
+    });
 
     $("#openMenu").click(function(){
     	$(".menuBar").toggle("fast");

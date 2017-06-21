@@ -26,23 +26,16 @@
 				<i class="fa fa-compass fa-2x"></i>
 			</div>
 			<div class="menuButton" id="openContext">
-				<i class="fa fa-map-marker fa-2x"></i>
+				<i class="fa fa-map fa-2x"></i>
 			</div>
 			<div class="contextMenu">
-				<form>
-					<div class="menuButton">
-						<label><input type="checkbox" name="locations" value="naturalWonders"> <i class="fa fa-map-marker fa-2x"></i></label>
+					<div class="menuButton" id="event">
+						<label><i class="fa fa-university"></i> Show locations</label>
 					</div>
 
-					<div class="menuButton">
-						<label><input type="checkbox" name="locations" value="events"> <i class="fa fa-map-marker fa-2x"></i></label>
+					<div class="menuButton" id="location">
+						<label><i class="fa fa-map-marker fa-2x"></i> Show events</label>
 					</div>
-
-					<div class="menuButton">
-						<input type="submit" class="submit">
-					</div>
-					
-				</form>
 			</div>
 			<div class="menuButton">
 				<i class="fa fa-user-o fa-2x"></i>

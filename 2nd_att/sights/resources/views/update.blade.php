@@ -31,7 +31,7 @@
 			Update Panel
 		</div>
 	
-		<form>
+		<form method="post">
 			<input type="text" placeholder="Enter Id" name="recordId">
 			<input type="text" placeholder="Enter Location Name" name="title">
 			<input type="text" placeholder="Enter description" name="description">

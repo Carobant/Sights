@@ -27,7 +27,7 @@ class AdminController extends Controller
     public function create(Request $request)
     {
         // $input = $request->all();
-        // var_dump($request->title);
+        // var_dump($request);
         $event = new Event;
 
         $event->title = $request->title;
