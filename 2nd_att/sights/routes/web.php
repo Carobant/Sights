@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return redirect()->route('home');
 });
 
 
@@ -26,7 +27,7 @@ Route::get('/', function () {
 
 Route::get('/test', 'EventsController@index');
 
-Route::get('/map', 'EventsController@map');
+Route::get('/map', 'EventsController@map')->name('home');
 
 Route::get('/admin', 'AdminController@index');
 
